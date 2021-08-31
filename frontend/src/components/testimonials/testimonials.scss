@@ -1,0 +1,115 @@
+@import "../../global.scss";
+
+.testimonials {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mobile{
+    justify-content: space-around;
+  }
+
+
+  h1 {
+    font-size: 50px;
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 80%;
+
+    @include mobile{
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .column{
+      width: 50%;
+      float: left;
+    }
+
+    .left{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, min(15vw));
+
+      .card {
+        width: 10vh;
+        height: 10vh;
+        border-radius: 10px;
+        box-shadow: 0 0 15px -8px black;
+        display: grid;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        margin: 25px 100px;
+        transition: all 1s ease;
+
+        @include mobile{
+          height: 180px;
+          margin: 10px 0;
+        }
+
+        &.featured{
+          width: 15vh;
+          height: 15vh;
+          margin: 0 80px;
+
+          @include mobile{
+            width: 250px;
+            height: 180px;
+            margin: 1px;
+          }
+        }
+
+        &:hover{
+          transform: scale(1.1);
+        }
+
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            &.left,
+            &.right {
+              height: 25px;
+            }
+            &.user {
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+
+              @include mobile{
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right{
+      text-align: center;
+
+      .card{
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px -8px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        transition: all 1s ease;
+        margin: 10px 10px;
+      }
+    }
+  }
+}
