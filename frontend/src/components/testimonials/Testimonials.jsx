@@ -4,9 +4,9 @@ import React from "react";
 export default function Testimonials(props) {
   const data = [{
       id: 1,
-      name: "Twitter",
-      img: "assets/twitterr.png",
-      link: "https://twitter.com/AzanulZ",
+      name: "Leetcode",
+      img: "assets/leetcode.png",
+      link: "https://leetcode.com/azanulhaque/",
     },
     {
       id: 2,
@@ -46,17 +46,20 @@ export default function Testimonials(props) {
     {
       id: 7,
       name: "Codingame",
-      img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      img: "assets/codingame.png",
+      link: "https://www.codingame.com/profile/7918894023dcfe28fbf64d7ec1578b3b3137604",
     },
     {
       id: 8,
-      name: "Martin Harold",
-      img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      name: "HackerEarth",
+      img: "assets/hackerearth.png",
+      link: "https://www.hackerearth.com/@azanul",
     },
     {
       id: 9,
-      name: "Martin Harold",
-      img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      name: "HackerRank",
+      img: "assets/HackerRank_logo.png",
+      link: "https://www.hackerrank.com/azanul",
     },
   ];
 
