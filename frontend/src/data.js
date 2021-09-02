@@ -42,12 +42,13 @@ export const featuredPortfolio = [
     },
     {
       id: 3, title: "Rehana Foundation",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+      img: require('./components/images/rehana.png').default,
+      link:"https://github.com/Azanul/rehana-foundation",
     },
     {
       id: 4, title: "BMI calculator",
-      img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-    },
+      img: require('./components/images/bmi.png').default,
+      link:"https://github.com/Azanul/rehana-foundation",    },
     {
       id: 5, title: "Sorting Visualizer",
       img: require('./components/images/Sorting-visual.png').default,
@@ -55,7 +56,8 @@ export const featuredPortfolio = [
     },
     {
       id: 6, title: "Chunin Exams",
-      img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
+      img: require('./components/images/chunin.png').default,
+      link:"https://github.com/Taiyogakure/chunin-exams",
     },
   ];
 
