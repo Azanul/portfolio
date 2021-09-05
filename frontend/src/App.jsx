@@ -12,7 +12,7 @@ function App() {
   const [menuOpen,setMenuOpen] = useState(false);
   const [gitInfo,setGitInfo] = useState([{"Action": "None", "Repo": "None"}]);
 
-  useEffect(() => {fetch("http://localhost:8080/gitInfo")
+  useEffect(() => {fetch(`${window.location.origin.toString()}/gitInfo`)
       .then((response) => response.json())
       .then((data) => {
           console.log(data);
