@@ -1,9 +1,8 @@
 import Header from "./components/header/Header";
 import Intro from "./components/intro/Intro"
 import Portfolio from "./components/portfolio/Portfolio"
-import Works from "./components/works/Works"
-import Testimonials from "./components/testimonials/Testimonials"
-import Contact from "./components/contact/Contact"
+import Experience from "./components/experience/Experience"
+import Platforms from "./components/platforms/Platforms"
 import "./app.scss"
 import React, {useEffect, useState} from "react";
 import Menu from "./components/menu/Menu";
@@ -29,9 +28,8 @@ function App() {
      <div className="sections">
        <Intro/>
        <Portfolio/>
-       <Works/>
-       <Testimonials gitInfo={gitInfo}/>
-       <Contact/>
+       <Experience/>
+       <Platforms gitInfo={gitInfo}/>
      </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import "./menu.scss";
+import React from "react";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
@@ -11,10 +12,10 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#works">Works</a>
+          <a href="#experience">Experience</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#platforms">Platforms</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#contact">Contact</a>

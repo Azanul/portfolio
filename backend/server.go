@@ -41,13 +41,7 @@ func main()  {
 
 	r := chi.NewRouter()
 	FileServer(r)
-	r.Get("/gitInfo", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/json")
-		err := json.NewEncoder(w).Encode(githubStuff())
-		if err != nil {
-			return
-		}
-	})
+	r.Get("/gitInfo", getGit)
 
 	err := http.ListenAndServe(":"+port, r)
 	if err != nil {
@@ -68,6 +62,13 @@ func FileServer(router *chi.Mux) {
 	})
 }
 
+func getGit(w http.ResponseWriter, r *http.Request){
+	w.Header().Set("Content-Type", "application/json")
+	err := json.NewEncoder(w).Encode(githubStuff())
+	if err != nil {
+		return
+	}
+}
 
 //func cors(h http.HandlerFunc) http.HandlerFunc {
 //	return func(w http.ResponseWriter, r *http.Request) {

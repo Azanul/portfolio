@@ -1,7 +1,7 @@
-import "./testimonials.scss";
+import "./platforms.scss";
 import React from "react";
 
-export default function Testimonials(props) {
+export default function Platforms(props) {
   const data = [{
       id: 1,
       name: "Leetcode",
@@ -64,7 +64,7 @@ export default function Testimonials(props) {
   ];
 
   return (
-      <div className="testimonials" id="testimonials">
+      <div className="platforms" id="platforms">
         <h1>Platforms where you can stalk me</h1>
         <div className="container">
           <div className="column left">

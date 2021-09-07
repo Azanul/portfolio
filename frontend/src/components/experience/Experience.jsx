@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./works.scss";
+import "./experience.scss";
 
-export default function Works() {
+export default function Experience() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
       {
@@ -35,7 +35,7 @@ export default function Works() {
   };
   
   return (
-    <div className="works" id="works">
+    <div className="experience" id="experience">
         <h1>Experience</h1>
       <div
         className="slider"
